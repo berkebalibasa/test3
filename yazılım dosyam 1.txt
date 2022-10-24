@@ -1,0 +1,114 @@
+"""
+1. başlat
+2. başlangıç komutunda yazanlar (hoşgeldiniz- böyle böyle karakter kullanın)
+3. ilk soru gelsin
+4. karakter girmesini isteyelim
+5. ikinci soru gelsin
+6. karakter girilmesini isteyelim
+7. üçüncü soru gelsin
+8. karakter girilmesini bekleyelim
+9. dördüncü soru gelsin
+10. karakter girilmesini bekleyelim
+11. beşinci yani son soru gelsin
+12. karakter girilmesini bekleyelim
+13. birinci soru bu and 2. soru bu and 3. soru bu and 4. soru bu and 5. soru bu ise sen busun diyelim.
+14. 243 adet yol var hepsini nasıl kolayca kodlayabilirim bilmiyorum o yüzden cevap sayısını 2 ye düşürmeye karar verdim
+15. 2**5 adet yol çıktı 32 adet yol var hepsini kodlayabilirim diye düşünüyorum.
+16. şimdi algoritmam bittiğine göre konu seçme vakti
+17. hangi marijuana türünü içmelisin?
+18. konumu belirledim şimdi yazmaya başlayabilirim.
+19. bitir
+"""
+
+print(f"""
+Testimize hoşgeldiniz. Bu testi dürüstçe cevaplamanız dahilinde
+hangi marijuana türünü içmeniz gerektiğini öğrenebileceksiniz.
+Hazırsanız teste başlayalım. (Lütfen başlamak için ENTER'a basınız).
+""")
+
+input()
+
+soru1 = "  Kendinizi parti insanı olarak mı görüyorsunuz yoksa " \
+        "  sakin ortamları mı tercih ediyorsunuz ? " \
+        "  A) Parti " \
+        "  B) Sakin ortamlar"
+
+soru2 = "   Eğlence için uykunuzdan vazgeçebilir misiniz ?" \
+        "   A) Evet" \
+        "   B) Hayır"
+
+soru3 = "   Rakı içmeyi mi tercih edersiniz Tequila mı ?" \
+        "   A) Tequila" \
+        "   B) Rakı"
+
+soru4 = "   Bu gece Marijuana içicek olsanız enerjik olmak için mi içersiniz yoksa rahatlamak için mi ?" \
+        "   A) Enerjik" \
+        "   B) Sakinleşmek"
+
+print(soru1)
+
+cevap = (input("Cevap: "))
+
+if cevap == "a":
+ print(soru2)
+
+elif cevap == "b":
+        print(soru2)
+else:
+        print("  Tanımlanmayan Cevap. Lütfen tesi baştan başlatınız.")
+
+cevap2 = (input("Cevap: "))
+
+if cevap2 == "a":
+ print(soru3)
+
+elif cevap2 == "b":
+        print(soru3)
+else:
+        print("  Tanımlanmayan Cevap. Lütfen tesi baştan başlatınız.")
+
+cevap3 = (input("Cevap: "))
+
+if cevap3 == "a":
+        print(soru4)
+
+elif cevap3 == "b":
+        print(soru4)
+
+else:
+        print("  Tanımlanmayan Cevap. Lütfen tesi baştan başlatınız.")
+
+cevap4 = (input("Cevap: "))
+
+if cevap == "a" and cevap2 == "a" and cevap3 == "a" and cevap4 == "a":
+        print("  Tebrikler siz Sativa türü Marijuana seviyorsunuz.")
+elif cevap == "a" and cevap2 == "a" and cevap3 == "a" and cevap4 == "b":
+        print("  Tebrikler siz Sativa türü Marijuana seviyorsunuz.")
+elif cevap == "a" and cevap2 == "a" and cevap3 == "b" and cevap4 == "a":
+        print("  Tebrikler siz Sativa türü Marijuana seviyorsunuz.")
+elif cevap == "a" and cevap2 == "b" and cevap3 == "a" and cevap4 == "a":
+        print("  Tebrikler siz Sativa türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "a" and cevap3 == "a" and cevap4 == "a":
+        print("  Tebrikler siz Sativa türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "b" and cevap3 == "a" and cevap4 == "a":
+        print("  Tebrikler siz Hybrid türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "a" and cevap3 == "b" and cevap4 == "a":
+        print("  Tebrikler siz Hybrid türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "a" and cevap3 == "a" and cevap4 == "b":
+        print("  Tebrikler siz Hybrid türü Marijuana seviyorsunuz.")
+elif cevap == "a" and cevap2 == "b" and cevap3 == "b" and cevap4 == "a":
+        print("  Tebrikler siz Hybrid türü Marijuana seviyorsunuz.")
+elif cevap == "a" and cevap2 == "b" and cevap3 == "a" and cevap4 == "b":
+        print("  Tebrikler siz Hybrid türü Marijuana seviyorsunuz.")
+elif cevap == "a" and cevap2 == "a" and cevap3 == "b" and cevap4 == "b":
+        print("  Tebrikler siz Hybrid türü Marijuana seviyorsunuz.")
+elif cevap == "a" and cevap2 == "b" and cevap3 == "b" and cevap4 == "b":
+        print("  Tebrikler siz Indica türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "b" and cevap3 == "a" and cevap4 == "b":
+        print("  Tebrikler siz Indica türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "b" and cevap3 == "b" and cevap4 == "b":
+        print("  Tebrikler siz Indica türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "a" and cevap3 == "b" and cevap4 == "a":
+        print("  Tebrikler siz Indica türü Marijuana seviyorsunuz.")
+elif cevap == "b" and cevap2 == "b" and cevap3 == "b" and cevap4 == "a":
+        print("  Tebrikler siz Indica türü Marijuana seviyorsunuz.")
